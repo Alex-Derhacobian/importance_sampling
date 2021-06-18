@@ -5,6 +5,8 @@ Importance sampling is a technique for estimating properties of one distribution
 <img src="https://render.githubusercontent.com/render/math?math=P(X > \alpha) = \frac{1}{N}\sum_{i=1}^n h(X_i)">
 where <img src="https://render.githubusercontent.com/render/math?math=X_1, \dotsc, X_N \sim f"> and 
 <img src="https://render.githubusercontent.com/render/math?math=h(X_i) = \begin{cases} 1 \hspace{0.5cm } X_i > \alpha \\ 0 \hspace{0.5cm } X_i \leq \alpha \end{cases}">
+
+
 But what if the region where <img src="https://render.githubusercontent.com/render/math?math=X > \alpha"> is very small, maybe even too small for any random sample from $f$ to capture the area of this region? That is when importance sampling is used. Importance sampling encourages sampling from the region of interest, and accounts for this sampling bias by reweighting $f$. To understand this, we will first consider Monte Carlo integration in a continuous space. 
 \begin{equation*}
     P(X > \alpha) = \int_\mathcal{P} h(x)f(x)dx 
