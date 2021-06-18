@@ -3,8 +3,11 @@
 ## What is importance sampling? ##
 
 Importance sampling is a technique for estimating properties of one distribution by sampling from a different distribution. This can be used when when we want to estimate the property of some distribution <img src="https://render.githubusercontent.com/render/math?math=f">, but we don't know how to sample from <img src="https://render.githubusercontent.com/render/math?math=f">. Importance sampling is a generalization of Monte Carlo integration, where we estimate <img src="https://render.githubusercontent.com/render/math?math=P(X > \alpha)"> by calculating 
+
 <img src="https://render.githubusercontent.com/render/math?math=P(X > \alpha) = \frac{1}{N}\sum_{i=1}^n h(X_i)">
+
 where <img src="https://render.githubusercontent.com/render/math?math=X_1, \dotsc, X_N \sim f"> and 
+
 <img src="https://render.githubusercontent.com/render/math?math=h(X_i) = \begin{cases} 1 \hspace{0.5cm } X_i > \alpha \\ 0 \hspace{0.5cm } X_i \leq \alpha \end{cases}">
 
 
