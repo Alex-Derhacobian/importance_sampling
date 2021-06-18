@@ -17,6 +17,6 @@ But what if the region where <img src="https://render.githubusercontent.com/rend
 
 Let <img src="https://render.githubusercontent.com/render/math?math=g"> be a probability density that we know how to sample from. Then, we can write
 
-<img src="https://render.githubusercontent.com/render/math?math=P(X > \alpha) = \int_\mathcal{P} h(x)f(x) dx = \int_\mathcal{P} \lp \frac{h(x)f(x)}{g(x)}\rp g(x) dx = E_g[Y]">
+<img src="https://render.githubusercontent.com/render/math?math=P(X > \alpha) = \int_\mathcal{P} h(x)f(x) dx = \int_\mathcal{P}  \frac{h(x)f(x)}{g(x)} g(x) dx = E_g[Y]">
 
 where <img src="https://render.githubusercontent.com/render/math?math=Y = \frac{h(x)f(x)}{g(x)}"> You will show that importance sampling can reduce the variance of probability estimates in regions of low density. 
